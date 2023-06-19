@@ -1,0 +1,16 @@
+    AGE = 18
+    read AGE
+    _t1 = AGE >= 17
+    if _t1 goto L1
+    write 0
+    goto L2
+.L1:
+    write 1
+L2:
+    _t2 = AGE >= 0
+    if _t2 goto L3
+    write 0
+    goto L4
+.L3:
+    write 1
+L4:

@@ -1,0 +1,15 @@
+program -> cmd-seq
+cmd-seq -> cmd {’;’ cmd}
+cmd -> if-cmd | repeat-cmd | assign-cmd | read-cmd | write-cmd
+if-cmd-> if exp then cmd-seq [else cmd-seq] end
+repeat-cmd -> repeat cmd-seq until exp
+assign-cmd -> ID ’:=’ exp
+read-cmd -> read ID
+write-cmd -> write exp
+exp -> simple-exp [rel-op simple-exp]
+rel-op -> ’<’ | ’=’
+simple-exp -> term {add-op term}
+add-op -> ’+’ | ’-’
+term -> factor {mul-op factor}
+mul-op-> ’*’ | ’/’
+factor -> ’(’ exp ’)’ | NUMBER | ID

@@ -1,0 +1,9 @@
+READ X;
+I := 0;
+TOTAL := 0;
+REPEAT
+  TOTAL := TOTAL + I;
+  I := I + 1;
+  WRITE TOTAL
+UNTIL I < X;
+WRITE TOTAL

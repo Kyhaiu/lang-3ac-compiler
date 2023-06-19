@@ -1,0 +1,19 @@
+    read A
+    read B
+    _t1 = A + B
+    C = _t1
+    write C
+    read C
+    _t2 = C - B
+    C = _t2
+    write C
+    _t3 = C + B
+    A = _t3
+    write A
+    _t4 = C * A
+    B = _t4
+    write B
+    read B
+    _t5 = C / B
+    B = _t5
+    write B

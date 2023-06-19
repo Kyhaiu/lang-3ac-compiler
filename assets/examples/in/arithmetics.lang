@@ -1,0 +1,14 @@
+READ A;
+READ B;
+C := A + B;
+WRITE C;
+READ C;
+C := C - B;
+WRITE C;
+A := C + B;
+WRITE A;
+B := C * A;
+WRITE B;
+READ B;
+B := C / B;
+WRITE B

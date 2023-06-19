@@ -1,0 +1,14 @@
+    read X
+    I = 0
+    TOTAL = 0
+L1:
+    _t1 = TOTAL + I
+    TOTAL = _t1
+    _t2 = I + 1
+    I = _t2
+    write TOTAL
+    _t3 = I >= X
+    if _t3 goto L2
+    goto L1
+L2:
+    write TOTAL
